@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>ECE 140A Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <p>
+      Hello, ECE 140A!
+    </p>
+
+    Count: {{ count }} 
+    {% for file_name in files %}
+      {% if count == 1 %}
+        {% include file_name %}
+      {% endif %}
+    {% endfor %}
+
+  </body>
+
+</html>
