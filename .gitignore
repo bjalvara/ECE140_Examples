@@ -1,3 +1,4 @@
 *_env
 .vscode
+__pycache__
 dbcreds.py
